@@ -25,7 +25,7 @@ func solution(_ code:String) -> String {
     
     var mode = false
     var ret :String = ""
-    //let codeArray: [String] = code.split(separator: "")
+    //let codeArray = code.split(separator: "")
     let codeArray = Array(code.map{String($0)})
     
     for idx in 0...code.count-1{
