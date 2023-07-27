@@ -6,32 +6,80 @@
 //
 import Foundation
 
+//func solution(_ players:[String], _ callings:[String]) -> [String] {
+//    // 추월당한 결과값을 적을 배열
+//    var newPlayers = players
+//    for overtake in callings{
+//        // 추월한 선수의 index 번호
+//        var index = players.firstIndex(of: overtake)!
+//        // 추월당한 선수 이름
+//        let overtaked = newPlayers[index-1]
+//
+//        // 배열에서 추월당한 선수와 추월한 선수 위치 바꾸기
+//        newPlayers.swapAt( index-1, index)
+//    }
+//
+//    return newPlayers
+//}
+
+//print(solution(["mumu", "soe", "poe", "kai", "mine"], ["kai", "kai", "mine", "mine"]))
+
+//func solution(_ players:[String], _ callings:[String]) -> [String] {
+//    // 추월당한 결과값을 적을 배열
+//    var newPlayers = players
+//
+//    // 추월한 선수순위를 빠르게 찾기 위한 딕셔너리 <value:선수순위, key:선수이름>
+//    var dict:Dictionary<String, Int> = [String: Int]()
+//    for i in 0..<players.count{
+//        dict.updateValue(i, forKey: players[i])
+//    }
+//
+//    for overtake in callings{
+//
+//        // 추월한 선수의 index 번호
+//        var index = dict[overtake]!
+//        // 추월당한 선수 이름
+//
+        // 딕셔너리에서 추월당한 선수와 추월한 선수 위치 바꾸기
+//        dict.updateValue( index-1, forKey: overtake)
+        //dict.updateValue( index, forKey: @추월당한 선수 이름)
+//    }
+//
+//    // 딕셔너리를 value값으로 정렬하여 딕셔너리의 key값을 배열로 바꾸기
+//    var a = Array(dict.sorted(by: {$0.0<$1.0}))
+//    print(a)
+//
+//    return newPlayers
+//}
+//
+//
 func solution(_ players:[String], _ callings:[String]) -> [String] {
     // 추월당한 결과값을 적을 배열
     var newPlayers = players
-    
+
     // 추월한 선수순위를 빠르게 찾기 위한 딕셔너리 <value:선수순위, key:선수이름>
     var dict:Dictionary<String, Int> = [String: Int]()
     for i in 0..<players.count{
         dict.updateValue(i, forKey: players[i])
     }
-    
+
     for overtake in callings{
-        
+
         // 추월한 선수의 index 번호
         var index = dict[overtake]!
         // 추월당한 선수 이름
         let overtaked = newPlayers[index-1]
-        
+
         // 배열에서 추월당한 선수와 추월한 선수 위치 바꾸기
         newPlayers.swapAt( index-1, index)
-        
+
         // 딕셔너리에서 추월당한 선수와 추월한 선수 위치 바꾸기
         dict.updateValue( index-1, forKey: overtake)
         dict.updateValue( index, forKey: overtaked)
     }
-    
+
     return newPlayers
 }
-
 print(solution(["mumu", "soe", "poe", "kai", "mine"], ["kai", "kai", "mine", "mine"]))
+
+
