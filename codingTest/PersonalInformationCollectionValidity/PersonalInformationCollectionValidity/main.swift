@@ -19,7 +19,7 @@ func solution(_ today:String, _ terms:[String], _ privacies:[String]) -> [Int] {
     for i in terms{
         kindOfTerms.updateValue(Int(i.split(separator: " ")[1])!, forKey: String(i.split(separator: " ")[0]))
     }
-    
+
     // 보관 가능한 인덱스 번호 저장
     var answer: [Int] = []
     
@@ -57,22 +57,56 @@ func solution(_ today:String, _ terms:[String], _ privacies:[String]) -> [Int] {
 //print(solution("2020.01.01", ["Z 3", "D 5"], ["2019.01.01 D", "2019.11.15 Z", "2019.08.02 D", "2019.07.01 D", "2018.12.28 Z"]))
 //
 //print(solution("2021.01.28", ["A 2"], ["2020.12.01 A", "2010.01.01 A"]))
+//
+//print(solution("2016.02.15", ["A 100"], ["2000.06.16 A", "2008.02.15 A"]))
+//
+//print(solution("2020.12.17", ["A 12"], ["2010.01.01 A", "2019.12.17 A"]))
 
-print(solution("2016.02.15", ["A 100"], ["2000.06.16 A", "2008.02.15 A"]))
 
-print(solution("2020.12.17", ["A 12"], ["2010.01.01 A", "2019.12.17 A"]))
+//func a() -> Int {
+//    var numbers = [1,2,3,4,6,7,8,0]
+//    var answer = 0
+//    numbers = numbers.sorted()
+//    for i in 0...9 {
+//        if numbers.contains(i) == false{
+//            answer += i
+//        }
+//    }
+//    return answer
+//}
+//
+//print(a())
 
 
-func a() -> Int {
-    var numbers = [1,2,3,4,6,7,8,0]
-    var answer = 0
-    numbers = numbers.sorted()
-    for i in 0...9 {
-        if numbers.contains(i) == false{
-            answer += i
-        }
+// 다른 사람의 풀이 참고해서 다시 풀어보는 것
+
+func solution2(_ today:String, _ terms:[String], _ privacies:[String]) -> [Int] {
+    
+    let dataformat = DateFormatter()
+    dataformat.dateFormat = "yyyy.mm.dd"
+    
+    let today = dataformat.date(from: today)!
+    
+    print(today)
+    // 약관 종류에 따른 기간을 딕셔너리에 추가
+    var kindOfTerms: Dictionary<String, Int> = [:]
+    for i in terms{
+        kindOfTerms.updateValue(Int(i.split(separator: " ")[1])!, forKey: String(i.split(separator: " ")[0]))
+    }
+
+    // 보관 가능한 인덱스 번호 저장
+    var answer: [Int] = []
+    
+    for ( i, privacy) in privacies.enumerated(){
+        let splitPrivacy = privacy.split(separator: " ").map { String($0) }
+        print(splitPrivacy)
+        var privacyDay = dataformat.date(from: splitPrivacy[0])!
+        print(privacyDay)
+        
     }
     return answer
 }
 
-print(a())
+print(solution2("2016.02.15", ["A 100"], ["2000.06.16 A", "2008.02.15 A"]))
+
+print(solution2("2020.12.17", ["A 12"], ["2010.01.01 A", "2019.12.17 A"]))
