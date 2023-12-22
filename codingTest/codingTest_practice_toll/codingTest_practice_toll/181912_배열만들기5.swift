@@ -17,3 +17,8 @@ func solution(_ intStrs:[String], _ k:Int, _ s:Int, _ l:Int) -> [Int] {
 }
 
 print( solution(["0123456789","9876543210","9999999999999"], 50000, 5, 5))
+
+
+//func solution(_ intStrs: [String], _ k: Int, _ s: Int, _ l: Int) -> [Int] {
+//    return intStrs.map { Int($0.prefix(s + l).suffix(l))! }.filter { $0 > k }
+//}
