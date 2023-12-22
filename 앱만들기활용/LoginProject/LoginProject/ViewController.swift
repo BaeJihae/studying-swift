@@ -31,7 +31,7 @@ final class ViewController: UIViewController {
     }()
     
     // "이메일 또는 전화번호" 안내 문구
-    private var emailInfoLabel: UILabel = {
+    private let emailInfoLabel: UILabel = {
         let label = UILabel()
         label.text = "이메일 또는 전화번호"
         label.font = UIFont.systemFont(ofSize: 18)
@@ -73,7 +73,7 @@ final class ViewController: UIViewController {
     }()
     
     // "비밀번호" 안내 문구
-    private var passwordInfoLabel: UILabel = {
+    private let passwordInfoLabel: UILabel = {
         let label = UILabel()
         label.text = "비밀번호"
         label.font = UIFont.systemFont(ofSize: 18)
@@ -102,8 +102,8 @@ final class ViewController: UIViewController {
         textField.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
         return textField
     }()
-    
-    // 패스워드에 "표시"버튼 비밀번호 가리기 기능
+
+    // 패스워드에 "표시"버튼 비 밀번호 가리기 기능
     private lazy var passwordSecureButton: UIButton = {
         let button = UIButton(type: .custom)
         button.setTitle("표시", for: .normal)
@@ -158,6 +158,7 @@ final class ViewController: UIViewController {
     }
     
     func makeUI() {
+        
         view.addSubview(stackView)
         view.addSubview(passwordResetButton)
         
@@ -178,7 +179,7 @@ final class ViewController: UIViewController {
             emailInfoLabel.trailingAnchor.constraint(equalTo: emailTextFieldView.trailingAnchor, constant: -8),
             // 유동적이도록 지워줌.
             //emailInfoLabel.centerYAnchor.constraint(equalTo: emailTextFieldView.centerYAnchor, constant: 0),
-            // 유동적이게
+            // 애니메이션을 사용하기 위한 설정
             emailInfoLabelCenterYConstraint,
         
             
@@ -191,6 +192,7 @@ final class ViewController: UIViewController {
             passwordInfoLabel.leadingAnchor.constraint(equalTo: passwordTextFieldView.leadingAnchor, constant: 8),
             passwordInfoLabel.trailingAnchor.constraint(equalTo: passwordTextFieldView.trailingAnchor, constant: -8),
             //passwordInfoLabel.centerYAnchor.constraint(equalTo: passwordTextFieldView.centerYAnchor, constant: 0),
+            // 애니메이션을 사용하기 위한 설정
             passwordInfoLabelCenterYConstraint,
         
             passwordTextField.leadingAnchor.constraint(equalTo: passwordTextFieldView.leadingAnchor, constant: 8),
