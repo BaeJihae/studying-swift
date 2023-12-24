@@ -1,11 +1,9 @@
 //
-//  [ 프로그래머스 ] 181940 - 문자열 곱하기
+//  [ 프로그래머스 ] 181939 - 문자열 곱하기
 //
 //  문제 링크
 //  https://school.programmers.co.kr/learn/courses/30/lessons/181940
 //
-
-import Foundation
 
 import Foundation
 

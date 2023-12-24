@@ -1,8 +1,8 @@
 //
-//  [ 프로그래머스 ] 181940 - 문자열 곱하기
+//  [ 프로그래머스 ] 181939 - 더 크게 합치기
 //
 //  문제 링크
-//  https://school.programmers.co.kr/learn/courses/30/lessons/181940
+//  https://school.programmers.co.kr/learn/courses/30/lessons/181939
 //
 
 import Foundation
