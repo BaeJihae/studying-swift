@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TR-fu-zu3">
+                                <rect key="frame" x="20" y="79" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1d-xM-baA">
+                                <rect key="frame" x="20" y="120" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="POJ-gH-dcz">
+                                <rect key="frame" x="18" y="175" width="124" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="EcV-Mb-xzf"/>
+                                </constraints>
+                            </slider>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="74" placeholderIntrinsicHeight="76" translatesAutoresizingMaskIntoConstraints="NO" id="2Vm-6a-pKq" customClass="MyView" customModule="autoLayout_Examples" customModuleProvider="target">
+                                <rect key="frame" x="299" y="79" width="74" height="76"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="74" placeholderIntrinsicHeight="76" translatesAutoresizingMaskIntoConstraints="NO" id="MOB-Yj-b6n" customClass="MyView" customModule="autoLayout_Examples" customModuleProvider="target">
+                                <rect key="frame" x="299" y="163" width="74" height="76"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="POJ-gH-dcz" firstAttribute="top" secondItem="a1d-xM-baA" secondAttribute="bottom" constant="20" id="91P-r9-sB8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Vm-6a-pKq" secondAttribute="trailing" constant="20" id="Dba-Yi-xxP"/>
+                            <constraint firstItem="2TR-fu-zu3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="H1l-AH-AtQ"/>
+                            <constraint firstItem="POJ-gH-dcz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="UVV-K8-Idd"/>
+                            <constraint firstItem="a1d-xM-baA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Utu-B7-84c"/>
+                            <constraint firstItem="2TR-fu-zu3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dRh-qM-Aqv"/>
+                            <constraint firstItem="2Vm-6a-pKq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="irh-4W-kYA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MOB-Yj-b6n" secondAttribute="trailing" constant="20" id="n6s-B0-2Wb"/>
+                            <constraint firstItem="MOB-Yj-b6n" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="nDm-UN-fVj"/>
+                            <constraint firstItem="a1d-xM-baA" firstAttribute="top" secondItem="2TR-fu-zu3" secondAttribute="bottom" constant="20" id="q8X-jD-zci"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.770992366412212" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
