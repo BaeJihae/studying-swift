@@ -45,17 +45,23 @@ class ViewController: UIViewController {
     // 세그웨이 방식은 다른 재정의된 함수로 문자열 전달
     // UIStoryboardSegue라는 클래스를 통해서 다음 화면에 접근이 가능함.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.identifier == "toThirdVC" {
-            
             let thirdVC = segue.destination as! ThirdViewController
             thirdVC.someString = "세번째 페이지 완성!"
         }
         
         if segue.identifier == "toFourVC" {
-            
-            let FourVC = segue.destination as! FourthViewController
-            FourVC.someString = "네번째 페이지 완성!"
+            let fourVC = segue.destination as! FourthViewController
+            fourVC.someString = "네번째 페이지 완성!"
         }
+        
+    }
+    
+    // 세그웨이를 동작할 지 안할지 결정 ( 직접 세그웨이를 만들었을 때만 실행됨 )
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        return true
     }
 
     

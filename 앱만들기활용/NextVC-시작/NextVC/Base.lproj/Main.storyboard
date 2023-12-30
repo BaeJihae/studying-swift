@@ -61,7 +61,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="3FK-P5-jMm" kind="presentation" identifier="toFourthVC" id="hGp-BQ-eTM"/>
+                                            <segue destination="3FK-P5-jMm" kind="presentation" identifier="toFourVC" id="hGp-BQ-eTM"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -185,7 +185,7 @@
         <scene sceneID="LLD-dR-ONg">
             <objects>
                 <viewController id="3FK-P5-jMm" customClass="FourthViewController" customModule="NextVC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" restorationIdentifier="to" id="bdU-fj-Rco">
+                    <view key="view" contentMode="scaleToFill" id="bdU-fj-Rco">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
