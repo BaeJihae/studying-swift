@@ -108,8 +108,7 @@
                     </view>
                     <connections>
                         <outlet property="calculateButton" destination="WFB-RV-59M" id="iAh-al-rLQ"/>
-                        <outlet property="hegihtTextField" destination="Ruj-4W-fya" id="czQ-NW-vEO"/>
-                        <outlet property="heightTextField" destination="Ruj-4W-fya" id="udP-T8-Wxh"/>
+                        <outlet property="heightTextField" destination="Ruj-4W-fya" id="xvy-wb-eVc"/>
                         <outlet property="mainLabel" destination="GSf-gR-VUf" id="YIf-Ot-UfX"/>
                         <outlet property="weightTextField" destination="JyC-v3-NaI" id="b5L-Ay-H4m"/>
                     </connections>
@@ -203,16 +202,16 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray5Color">
-            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tableBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
