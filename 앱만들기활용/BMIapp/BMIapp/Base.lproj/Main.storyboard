@@ -91,6 +91,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="76B-cr-0ee"/>
+                                    <segue destination="dad-rj-WoO" kind="presentation" identifier="toSecond" modalPresentationStyle="fullScreen" id="2UF-Yd-6Jh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,16 +118,16 @@
             </objects>
             <point key="canvasLocation" x="43.511450381679388" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="XqM-E8-ySS">
             <objects>
-                <viewController id="dad-rj-WoO" sceneMemberID="viewController">
+                <viewController id="dad-rj-WoO" customClass="SecondViewController" customModule="BMIapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nK6-ON-3Ur">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="my4-dO-Bio">
-                                <rect key="frame" x="96.666666666666686" y="189" width="200" height="127"/>
+                                <rect key="frame" x="96.666666666666686" y="130" width="200" height="127"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI 결과값" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-sW-sWh">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="24"/>
@@ -156,7 +157,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iX-Ho-inI">
-                                <rect key="frame" x="20" y="743" width="353" height="45"/>
+                                <rect key="frame" x="20" y="777" width="353" height="45"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="TIo-8m-cad"/>
@@ -168,6 +169,9 @@
                                 <state key="normal" title="다시 계산하기">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="dad-rj-WoO" eventType="touchUpInside" id="wD6-Ao-pdL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="kGA-ko-1ef"/>
@@ -180,10 +184,15 @@
                             <constraint firstItem="my4-dO-Bio" firstAttribute="top" secondItem="kGA-ko-1ef" secondAttribute="top" constant="130" id="euW-yL-BRf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="adviceLabel" destination="4xk-76-OXB" id="MMe-Tr-mQy"/>
+                        <outlet property="backButton" destination="6iX-Ho-inI" id="wDM-gz-bEu"/>
+                        <outlet property="bmiNumberLabel" destination="SBc-sc-Xss" id="pge-Zd-BPx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="omS-Bu-jKF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="-27"/>
+            <point key="canvasLocation" x="895" y="-27"/>
         </scene>
     </scenes>
     <resources>
