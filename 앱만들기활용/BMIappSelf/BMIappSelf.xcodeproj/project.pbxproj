@@ -7,33 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E7A2E212B405FD1007346DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A2E202B405FD1007346DD /* AppDelegate.swift */; };
-		2E7A2E232B405FD1007346DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A2E222B405FD1007346DD /* SceneDelegate.swift */; };
-		2E7A2E252B405FD1007346DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A2E242B405FD1007346DD /* ViewController.swift */; };
-		2E7A2E282B405FD1007346DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A2E262B405FD1007346DD /* Main.storyboard */; };
-		2E7A2E2A2B405FD3007346DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A2E292B405FD3007346DD /* Assets.xcassets */; };
-		2E7A2E2D2B405FD3007346DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7A2E2B2B405FD3007346DD /* LaunchScreen.storyboard */; };
-		2E7A2E412B41018F007346DD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7A2E402B41018F007346DD /* SecondViewController.swift */; };
-		2EF66B1C2B44040600B8A1AD /* BMICalculatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF66B1B2B44040600B8A1AD /* BMICalculatorManager.swift */; };
-		2EF66B1E2B441F2400B8A1AD /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF66B1D2B441F2400B8A1AD /* BMI.swift */; };
+		2EF66B002B43D34700B8A1AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF66AFF2B43D34700B8A1AD /* AppDelegate.swift */; };
+		2EF66B022B43D34700B8A1AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF66B012B43D34700B8A1AD /* SceneDelegate.swift */; };
+		2EF66B042B43D34700B8A1AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF66B032B43D34700B8A1AD /* ViewController.swift */; };
+		2EF66B072B43D34700B8A1AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF66B052B43D34700B8A1AD /* Main.storyboard */; };
+		2EF66B092B43D34900B8A1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EF66B082B43D34900B8A1AD /* Assets.xcassets */; };
+		2EF66B0C2B43D34900B8A1AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF66B0A2B43D34900B8A1AD /* LaunchScreen.storyboard */; };
+		2EF66B162B43D9AC00B8A1AD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF66B152B43D9AC00B8A1AD /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E7A2E1D2B405FD1007346DD /* BMIapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMIapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E7A2E202B405FD1007346DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E7A2E222B405FD1007346DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E7A2E242B405FD1007346DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E7A2E272B405FD1007346DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E7A2E292B405FD3007346DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E7A2E2C2B405FD3007346DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E7A2E2E2B405FD3007346DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E7A2E402B41018F007346DD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		2EF66B1B2B44040600B8A1AD /* BMICalculatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorManager.swift; sourceTree = "<group>"; };
-		2EF66B1D2B441F2400B8A1AD /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		2EF66AFC2B43D34700B8A1AD /* BMIappSelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMIappSelf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EF66AFF2B43D34700B8A1AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EF66B012B43D34700B8A1AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2EF66B032B43D34700B8A1AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2EF66B062B43D34700B8A1AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EF66B082B43D34900B8A1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EF66B0B2B43D34900B8A1AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EF66B0D2B43D34900B8A1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EF66B152B43D9AC00B8A1AD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E7A2E1A2B405FD1007346DD /* Frameworks */ = {
+		2EF66AF92B43D34700B8A1AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,100 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E7A2E142B405FD1007346DD = {
+		2EF66AF32B43D34700B8A1AD = {
 			isa = PBXGroup;
 			children = (
-				2E7A2E1F2B405FD1007346DD /* BMIapp */,
-				2E7A2E1E2B405FD1007346DD /* Products */,
+				2EF66AFE2B43D34700B8A1AD /* BMIappSelf */,
+				2EF66AFD2B43D34700B8A1AD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2E7A2E1E2B405FD1007346DD /* Products */ = {
+		2EF66AFD2B43D34700B8A1AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E7A2E1D2B405FD1007346DD /* BMIapp.app */,
+				2EF66AFC2B43D34700B8A1AD /* BMIappSelf.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2E7A2E1F2B405FD1007346DD /* BMIapp */ = {
+		2EF66AFE2B43D34700B8A1AD /* BMIappSelf */ = {
 			isa = PBXGroup;
 			children = (
-				2E7A2E202B405FD1007346DD /* AppDelegate.swift */,
-				2E7A2E222B405FD1007346DD /* SceneDelegate.swift */,
-				2E7A2E292B405FD3007346DD /* Assets.xcassets */,
-				2E7A2E2B2B405FD3007346DD /* LaunchScreen.storyboard */,
-				2E7A2E2E2B405FD3007346DD /* Info.plist */,
-				2EF66B192B44034A00B8A1AD /* Models */,
-				2EF66B1A2B44035E00B8A1AD /* Controllers */,
-				2EF66B182B44026700B8A1AD /* Views */,
+				2EF66AFF2B43D34700B8A1AD /* AppDelegate.swift */,
+				2EF66B012B43D34700B8A1AD /* SceneDelegate.swift */,
+				2EF66B152B43D9AC00B8A1AD /* SecondViewController.swift */,
+				2EF66B032B43D34700B8A1AD /* ViewController.swift */,
+				2EF66B052B43D34700B8A1AD /* Main.storyboard */,
+				2EF66B082B43D34900B8A1AD /* Assets.xcassets */,
+				2EF66B0A2B43D34900B8A1AD /* LaunchScreen.storyboard */,
+				2EF66B0D2B43D34900B8A1AD /* Info.plist */,
 			);
-			path = BMIapp;
-			sourceTree = "<group>";
-		};
-		2EF66B182B44026700B8A1AD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				2E7A2E262B405FD1007346DD /* Main.storyboard */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-			usesTabs = 0;
-		};
-		2EF66B192B44034A00B8A1AD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2EF66B1D2B441F2400B8A1AD /* BMI.swift */,
-				2EF66B1B2B44040600B8A1AD /* BMICalculatorManager.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2EF66B1A2B44035E00B8A1AD /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				2E7A2E242B405FD1007346DD /* ViewController.swift */,
-				2E7A2E402B41018F007346DD /* SecondViewController.swift */,
-			);
-			path = Controllers;
+			path = BMIappSelf;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E7A2E1C2B405FD1007346DD /* BMIapp */ = {
+		2EF66AFB2B43D34700B8A1AD /* BMIappSelf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E7A2E312B405FD3007346DD /* Build configuration list for PBXNativeTarget "BMIapp" */;
+			buildConfigurationList = 2EF66B102B43D34900B8A1AD /* Build configuration list for PBXNativeTarget "BMIappSelf" */;
 			buildPhases = (
-				2E7A2E192B405FD1007346DD /* Sources */,
-				2E7A2E1A2B405FD1007346DD /* Frameworks */,
-				2E7A2E1B2B405FD1007346DD /* Resources */,
+				2EF66AF82B43D34700B8A1AD /* Sources */,
+				2EF66AF92B43D34700B8A1AD /* Frameworks */,
+				2EF66AFA2B43D34700B8A1AD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BMIapp;
-			productName = BMIapp;
-			productReference = 2E7A2E1D2B405FD1007346DD /* BMIapp.app */;
+			name = BMIappSelf;
+			productName = BMIappSelf;
+			productReference = 2EF66AFC2B43D34700B8A1AD /* BMIappSelf.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2E7A2E152B405FD1007346DD /* Project object */ = {
+		2EF66AF42B43D34700B8A1AD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
-					2E7A2E1C2B405FD1007346DD = {
+					2EF66AFB2B43D34700B8A1AD = {
 						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
-			buildConfigurationList = 2E7A2E182B405FD1007346DD /* Build configuration list for PBXProject "BMIapp" */;
+			buildConfigurationList = 2EF66AF72B43D34700B8A1AD /* Build configuration list for PBXProject "BMIappSelf" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,58 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 2E7A2E142B405FD1007346DD;
-			productRefGroup = 2E7A2E1E2B405FD1007346DD /* Products */;
+			mainGroup = 2EF66AF32B43D34700B8A1AD;
+			productRefGroup = 2EF66AFD2B43D34700B8A1AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2E7A2E1C2B405FD1007346DD /* BMIapp */,
+				2EF66AFB2B43D34700B8A1AD /* BMIappSelf */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E7A2E1B2B405FD1007346DD /* Resources */ = {
+		2EF66AFA2B43D34700B8A1AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E7A2E2D2B405FD3007346DD /* LaunchScreen.storyboard in Resources */,
-				2E7A2E2A2B405FD3007346DD /* Assets.xcassets in Resources */,
-				2E7A2E282B405FD1007346DD /* Main.storyboard in Resources */,
+				2EF66B0C2B43D34900B8A1AD /* LaunchScreen.storyboard in Resources */,
+				2EF66B092B43D34900B8A1AD /* Assets.xcassets in Resources */,
+				2EF66B072B43D34700B8A1AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E7A2E192B405FD1007346DD /* Sources */ = {
+		2EF66AF82B43D34700B8A1AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E7A2E412B41018F007346DD /* SecondViewController.swift in Sources */,
-				2E7A2E252B405FD1007346DD /* ViewController.swift in Sources */,
-				2E7A2E212B405FD1007346DD /* AppDelegate.swift in Sources */,
-				2EF66B1C2B44040600B8A1AD /* BMICalculatorManager.swift in Sources */,
-				2EF66B1E2B441F2400B8A1AD /* BMI.swift in Sources */,
-				2E7A2E232B405FD1007346DD /* SceneDelegate.swift in Sources */,
+				2EF66B162B43D9AC00B8A1AD /* SecondViewController.swift in Sources */,
+				2EF66B042B43D34700B8A1AD /* ViewController.swift in Sources */,
+				2EF66B002B43D34700B8A1AD /* AppDelegate.swift in Sources */,
+				2EF66B022B43D34700B8A1AD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2E7A2E262B405FD1007346DD /* Main.storyboard */ = {
+		2EF66B052B43D34700B8A1AD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E7A2E272B405FD1007346DD /* Base */,
+				2EF66B062B43D34700B8A1AD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2E7A2E2B2B405FD3007346DD /* LaunchScreen.storyboard */ = {
+		2EF66B0A2B43D34900B8A1AD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2E7A2E2C2B405FD3007346DD /* Base */,
+				2EF66B0B2B43D34900B8A1AD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -203,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2E7A2E2F2B405FD3007346DD /* Debug */ = {
+		2EF66B0E2B43D34900B8A1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		2E7A2E302B405FD3007346DD /* Release */ = {
+		2EF66B0F2B43D34900B8A1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -322,7 +289,7 @@
 			};
 			name = Release;
 		};
-		2E7A2E322B405FD3007346DD /* Debug */ = {
+		2EF66B112B43D34900B8A1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +298,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79LSKHWYJ8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BMIapp/Info.plist;
+				INFOPLIST_FILE = BMIappSelf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,7 +309,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Baejihae.BMIapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baejihae.BMIappSelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -353,7 +320,7 @@
 			};
 			name = Debug;
 		};
-		2E7A2E332B405FD3007346DD /* Release */ = {
+		2EF66B122B43D34900B8A1AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -362,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 79LSKHWYJ8;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BMIapp/Info.plist;
+				INFOPLIST_FILE = BMIappSelf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -373,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Baejihae.BMIapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Baejihae.BMIappSelf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -387,25 +354,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E7A2E182B405FD1007346DD /* Build configuration list for PBXProject "BMIapp" */ = {
+		2EF66AF72B43D34700B8A1AD /* Build configuration list for PBXProject "BMIappSelf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E7A2E2F2B405FD3007346DD /* Debug */,
-				2E7A2E302B405FD3007346DD /* Release */,
+				2EF66B0E2B43D34900B8A1AD /* Debug */,
+				2EF66B0F2B43D34900B8A1AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E7A2E312B405FD3007346DD /* Build configuration list for PBXNativeTarget "BMIapp" */ = {
+		2EF66B102B43D34900B8A1AD /* Build configuration list for PBXNativeTarget "BMIappSelf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2E7A2E322B405FD3007346DD /* Debug */,
-				2E7A2E332B405FD3007346DD /* Release */,
+				2EF66B112B43D34900B8A1AD /* Debug */,
+				2EF66B122B43D34900B8A1AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2E7A2E152B405FD1007346DD /* Project object */;
+	rootObject = 2EF66AF42B43D34700B8A1AD /* Project object */;
 }

@@ -1,91 +1,97 @@
 //
 //  ViewController.swift
-//  BMIapp
+//  BMIappSelf
 //
-//  Created by 배지해 on 12/30/23.
+//  Created by 배지해 on 1/2/24.
 //
 
 import UIKit
 
-class ViewController: UIViewController{
-
+class ViewController: UIViewController {
+    
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var heightTextField: UITextField!
     @IBOutlet weak var weightTextField: UITextField!
-    @IBOutlet weak var calculateButton: UIButton!
+    @IBOutlet weak var bmiCalculateButton: UIButton!
     
+    // bmi를 담을 전역 변수 만들기
     var bmi: Double?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        makeUI()
-    }
-    
-    func makeUI(){
+        
+        uiSetting()
+        
         heightTextField.delegate = self
         weightTextField.delegate = self
         
+        
+    }
+    
+    func uiSetting() {
+        
+        // mainLabel 초기 설정
         mainLabel.text = "키와 몸무게를 입력해 주세요."
         
-        calculateButton.clipsToBounds = true
-        calculateButton.layer.cornerRadius = 5
-        calculateButton.setTitle("BMI 계산하기", for: .normal)
+        // BMI 계산하기 버튼 테두리 둥글게 만들기
+        bmiCalculateButton.translatesAutoresizingMaskIntoConstraints = true
+        bmiCalculateButton.layer.cornerRadius = 5
         
-        heightTextField.placeholder = "cm단위로 입력해주세요."
+        // heightTF의 placeholder 설정
+        heightTextField.placeholder = "키를 입력해주세요."
+        // heightTF의 키보드 타입 설정
         heightTextField.keyboardType = .numbersAndPunctuation
+        // hegithTF 테두리 둥글게 만들기
+        heightTextField.translatesAutoresizingMaskIntoConstraints = true
+        heightTextField.layer.cornerRadius = 8
         
-        weightTextField.placeholder = "kg단위로 입력해주세요."
+        // weightTF의 placeholder 설정
+        weightTextField.placeholder = "몸무게를 입력해주세요."
+        // weightTF의 키보드 타입 설정
         weightTextField.keyboardType = .numbersAndPunctuation
+        // weightTF 테두리 둥글게 만들기
+        weightTextField.translatesAutoresizingMaskIntoConstraints = true
+        weightTextField.layer.cornerRadius = 8
+    }
+
+    @IBAction func bmiCalculateButtonTapped(_ sender: UIButton) {
+        // BMI 결과
+        guard let weight = weightTextField.text, let height = heightTextField.text else { return }
+        bmi = bmiCalculate( weight, height)
     }
     
-    @IBAction func calculateButton(_ sender: UIButton) {
-        // Bmi 결과값을 뽑아냄.
-        guard let height = heightTextField.text, let weight = weightTextField.text else { return }
-        bmi = caculateBMI(height: height, weight: weight)
-        
-    }
-    
-    // 버튼 클릭시 다음 화면으로의 전환 여부
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        if weightTextField.text == "", weightTextField.text == "" {
+        if weightTextField.text == "", heightTextField.text == "" {
             mainLabel.text = "키와 몸무게를 입력하셔야만 합니다!"
             mainLabel.textColor = .red
             return false
         }
-        mainLabel.text = "키와 몸무게를 입력해 주세요"
+        mainLabel.text = "키와 몸무게를 입력해 주세요."
         mainLabel.textColor = .black
         return true
     }
     
-    // 다음 화면으로 데이터 전달을 위한 함수
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "toSecond" {
+            // secondVC에 접근하기 위해서는 Destination이라는 segue의 목적지를 SecondViewController로 타입 캐스팅해야한다.
             let secondVC = segue.destination as! SecondViewController
-            // 계산된 결과값을 다음 화면으로 전달
-            secondVC.bmi = self.bmi
-            secondVC.bmiColor = getBackgroundColorAndString().0
-            secondVC.advice = getBackgroundColorAndString().1
+            
+            secondVC.bmiResultValue = bmi
+            secondVC.bmiColor = getBackgroundColorAdviceString().0
+            secondVC.bmiAdvice = getBackgroundColorAdviceString().1
+            
         }
-        
-        // 다음 화면으로 넘어가기 TF 비우기
-        heightTextField.text = ""
         weightTextField.text = ""
-        
+        heightTextField.text = ""
     }
     
-    // BMI 계산 메서드
-    func caculateBMI(height: String, weight: String) -> Double {
-        guard let h = Double(height), let w = Double(weight) else { return 0.0 }
-        var bmi = w / ( h * h ) * 10000
-        print("BMI결과값(반올림하기전):\(bmi)")
-        bmi = round( bmi * 10 ) / 10
-        print("BMI결과값(반올림한 후):\(bmi)")
-        return bmi
+    func bmiCalculate(_ weight: String, _ height: String) -> Double{
+        guard let w = Double(weight), let h = Double(height) else { return 0.0 }
+        return round( w / ( h * h ) * 10000 * 10 ) / 10
     }
     
-    // 색깔과 문자열 얻는 메서드
-    func getBackgroundColorAndString() -> ( UIColor, String ) {
+    // BMI의 계산값에 따른 색깔과 수치 출력하는 함수
+    func getBackgroundColorAdviceString() -> ( UIColor, String ) {
         guard let bmi = bmi else { return (UIColor.black, "오류") }
         switch bmi {
         case ..<18.6:
@@ -102,16 +108,12 @@ class ViewController: UIViewController{
             return (UIColor.black, "오류")
         }
     }
-    
 }
 
-// TF를 위한 델리게이트 프로토콜 채택
-extension ViewController: UITextFieldDelegate{
+extension ViewController: UITextFieldDelegate {
     
-    // TF에서의 입력 제어
+    // TF의 숫자 사용만을 허락
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        
-        // 숫자이고, 빈 문자열이라면 입력 허용 -> height와 weight 모두 적용
         if Int(string) != nil || string == "" {
             return true
         }
@@ -120,22 +122,23 @@ extension ViewController: UITextFieldDelegate{
     
     // Return 버튼 허락 여부
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // 두 개의 텍스트 필드를 모두 종료 ( 키보드를 내린다 )
-        if heightTextField.text != "", weightTextField.text != "" {
+        if weightTextField.text != "" && heightTextField.text != ""{
+            // weightTF 키보드 내리기
             weightTextField.resignFirstResponder()
             return true
-        // 두번째 텍스트 필드로 넘어가도록
-        }else if heightTextField.text != "" {
+        }else if heightTextField.text != ""{
+            // weightTF로 이동하여 키보드 올리기
             weightTextField.becomeFirstResponder()
             return true
+        }else {
+            return false
         }
-        return false
     }
-    
     // 빈 화면을 클릭할 시 TF종료
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // 키보드 내리기
+        // heightTF 키보드 내리기
         heightTextField.resignFirstResponder()
+        // weightTF 키보드 내리기
         weightTextField.resignFirstResponder()
     }
 }
