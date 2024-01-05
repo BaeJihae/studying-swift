@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E485D7C2B4852DB00BA8D71 /* 181860_빈배열에추가,삭제하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "181860_빈배열에추가,삭제하기.swift"; path = "../../[프로그래머스]/LV.0/181860_빈배열에추가,삭제하기.swift"; sourceTree = "<group>"; };
 		2E6A523D2B33E314002385FC /* codingTest_practice_toll */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codingTest_practice_toll; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E6A52402B33E314002385FC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2E6A52402B33E314002385FC /* main.swift */,
+				2E485D7C2B4852DB00BA8D71 /* 181860_빈배열에추가,삭제하기.swift */,
 			);
 			path = codingTest_practice_toll;
 			sourceTree = "<group>";
