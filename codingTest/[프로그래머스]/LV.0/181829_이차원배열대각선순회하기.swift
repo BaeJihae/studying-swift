@@ -8,9 +8,13 @@
 import Foundation
 
 func solution(_ board:[[Int]], _ k:Int) -> Int {
-    var answer: Int = 0
-    (0...board.count-1).forEach{ i in (0...board.count-1).forEach{ j in if i + j <= k {answer += board[i][j]}}}
+    var answer = 0
+    for (i, a) in board.enumerated() {
+        for (j, b) in a.enumerated() {
+            if i + j <= k {
+                answer += b
+            }
+        }
+    }
     return answer
 }
-
-print(solution([[0, 1, 2],[1, 2, 3],[2, 3, 4],[3, 4, 5]],2))
