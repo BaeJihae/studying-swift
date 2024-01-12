@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  autoLayout_Examples
+//  autoLayoutwithCode
 //
-//  Created by 배지해 on 12/27/23.
+//  Created by 배지해 on 1/13/24.
 //
 
 import UIKit
@@ -13,5 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+
+
 }
+
