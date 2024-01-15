@@ -14,6 +14,9 @@
 		2E0F64142B51998A0034D1E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F64132B51998A0034D1E4 /* Assets.xcassets */; };
 		2E0F64172B51998A0034D1E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E0F64152B51998A0034D1E4 /* LaunchScreen.storyboard */; };
 		2E0F641F2B519DFD0034D1E4 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F641E2B519DFD0034D1E4 /* MovieCell.swift */; };
+		2E0F642F2B53FF8F0034D1E4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F642E2B53FF8F0034D1E4 /* Movie.swift */; };
+		2E0F64452B541A490034D1E4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F64442B541A480034D1E4 /* DataManager.swift */; };
+		2E0F64472B5420AC0034D1E4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0F64462B5420AB0034D1E4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		2E0F64162B51998A0034D1E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E0F64182B51998A0034D1E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E0F641E2B519DFD0034D1E4 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		2E0F642E2B53FF8F0034D1E4 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2E0F64442B541A480034D1E4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2E0F64462B5420AB0034D1E4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,43 @@
 		2E0F64092B5199880034D1E4 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				2E0F642D2B53FF170034D1E4 /* Controllers */,
+				2E0F642C2B53FF100034D1E4 /* Views */,
+				2E0F642B2B53FEFC0034D1E4 /* Models */,
 				2E0F640A2B5199880034D1E4 /* AppDelegate.swift */,
 				2E0F640C2B5199880034D1E4 /* SceneDelegate.swift */,
-				2E0F640E2B5199880034D1E4 /* ViewController.swift */,
-				2E0F64102B5199880034D1E4 /* Main.storyboard */,
-				2E0F641E2B519DFD0034D1E4 /* MovieCell.swift */,
 				2E0F64132B51998A0034D1E4 /* Assets.xcassets */,
 				2E0F64152B51998A0034D1E4 /* LaunchScreen.storyboard */,
 				2E0F64182B51998A0034D1E4 /* Info.plist */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		2E0F642B2B53FEFC0034D1E4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E0F642E2B53FF8F0034D1E4 /* Movie.swift */,
+				2E0F64442B541A480034D1E4 /* DataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E0F642C2B53FF100034D1E4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E0F64102B5199880034D1E4 /* Main.storyboard */,
+				2E0F641E2B519DFD0034D1E4 /* MovieCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E0F642D2B53FF170034D1E4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E0F640E2B5199880034D1E4 /* ViewController.swift */,
+				2E0F64462B5420AB0034D1E4 /* DetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +175,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E0F640F2B5199880034D1E4 /* ViewController.swift in Sources */,
+				2E0F64452B541A490034D1E4 /* DataManager.swift in Sources */,
 				2E0F640B2B5199880034D1E4 /* AppDelegate.swift in Sources */,
 				2E0F641F2B519DFD0034D1E4 /* MovieCell.swift in Sources */,
 				2E0F640D2B5199880034D1E4 /* SceneDelegate.swift in Sources */,
+				2E0F642F2B53FF8F0034D1E4 /* Movie.swift in Sources */,
+				2E0F64472B5420AC0034D1E4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
