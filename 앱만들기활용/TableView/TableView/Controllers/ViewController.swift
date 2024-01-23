@@ -32,8 +32,12 @@ class ViewController: UIViewController {
         
         // cell의 높이 설정
         tableView.rowHeight = 120
+        
+        // 테이블 뷰의 이름 추가
+        title = "영화목록"
 
     }
+    
     
     func setupDates() {
         
@@ -48,6 +52,19 @@ class ViewController: UIViewController {
         // tableView.register(<#T##nib: UINib?##UINib?#>, forCellReuseIdentifier : <#T##String#>)
         
     }
+    
+    // Table View에 새로운 Cell을 생성하는 버튼
+    @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
+        
+        // movieDataManger에게 movieData 추가를 요청
+        movieDataManager.updateMovieData()
+        
+        // tableView의 데이터를 리로드
+        tableView.reloadData()
+        
+    }
+    
+    
 }
 
 // 테이블 뷰로 전달해주는 데이터 소스에 대한 델리게이트 함수 구현
